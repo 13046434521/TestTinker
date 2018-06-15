@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_load_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showInfo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_load_install"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_load_install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="install_patch"
+        app:layout_constraintBottom_toTopOf="@+id/iv_main_test"
+        app:layout_constraintEnd_toStartOf="@+id/btn_load_unInstall"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_load_info"/>
+
+    <Button
+        android:id="@+id/btn_load_unInstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unInstall_patch"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_load_install"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_load_install"
+        app:layout_constraintTop_toTopOf="@+id/btn_load_install"/>
+
+
+    <ImageView
+        android:id="@+id/iv_main_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/btn_load_hack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_load_install"/>
+
+    <Button
+        android:id="@+id/btn_load_hack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load_hack"
+        app:layout_constraintBottom_toTopOf="@+id/btn_load_armeabi"
+        app:layout_constraintEnd_toStartOf="@+id/btn_load_nohack"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_test"/>
+
+    <Button
+        android:id="@+id/btn_load_nohack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load_nohack"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_load_hack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_load_hack"
+        app:layout_constraintTop_toTopOf="@+id/btn_load_hack"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/btn_load_armeabi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load_armeabi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_load_armeabiv7a"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_load_hack"/>
+
+    <Button
+        android:id="@+id/btn_load_armeabiv7a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load_armeabi-v7a"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_load_armeabi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_load_armeabi"
+        app:layout_constraintTop_toTopOf="@+id/btn_load_armeabi"/>
+
+</android.support.constraint.ConstraintLayout>
